@@ -2,6 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
 
+Drop in text documents to get the summary of what the content was.
+Can upscale this to PDFs and other large text documents as well.
+
+## Setup
+
+If possible use NVM (Node Version Manager) version 18 for node setup, a cleaner way to setup node rather than handling npm globally.
+
+npm version -> v9.5.1
+node version -> v18.16.1
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
