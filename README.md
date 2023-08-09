@@ -9,10 +9,25 @@ Can upscale this to PDFs and other large text documents as well.
 
 If possible use NVM (Node Version Manager) version 18 for node setup, a cleaner way to setup node rather than handling npm globally.
 
-npm version -> v9.5.1
-node version -> v18.16.1
+- npm version -> v9.5.1
+- node version -> v18.16.1
+
+> do a `npm install` once cloned
+
+## Stack
+
+- Angular (frontend)
+- Angular Material (UI)
+- FastAPI (Backend API)
+- Spacy (NLP toolkit)
+
+## Git Branching Strategy
+
+Get a branch from master to implement a feature, merge it into the `test-branch` and see if it is stable with other changes, then merge it to master. Any sort of deployment or build releases will be derived from the master branch.
 
 ## Development server
+
+> `npm run start` to test your code in a dev server (same as `ng serve`)
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
