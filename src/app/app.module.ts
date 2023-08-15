@@ -5,18 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { FileUploadComponent } from './file-upload/file-upload.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FileUploadComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSlideToggleModule // Material UI docs
+    MatSlideToggleModule,
+    DragDropModule // Material UI docs
   ],
   providers: [],
   bootstrap: [AppComponent]
