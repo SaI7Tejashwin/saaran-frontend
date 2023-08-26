@@ -52,5 +52,5 @@ export class SidenavbarComponent implements OnDestroy {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
 
-  shouldRun = /(^|.)(stackblitz|webcontainer).(io|com)$/.test(window.location.host);
+  //shouldRun = /(^|.)(stackblitz|webcontainer).(io|com)$/.test(window.location.host);
 }
