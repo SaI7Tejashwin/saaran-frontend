@@ -6,15 +6,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { NavbarComponent } from 'src/app/navbar/navbar.component';
-import { SideNavbarComponent } from 'src/app/sidenavbar/sidenavar.component';
+import { SidenavbarComponent } from 'src/app/sidenavbar/sidenavbar.component';
 import { UploadComponent } from 'src/app/upload/upload.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    SideNavbarComponent,
-    UploadComponent
   ],
   imports: [
     BrowserModule,
