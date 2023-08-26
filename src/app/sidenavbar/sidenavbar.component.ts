@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-upload',
+  selector: 'app-sidenavbar',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './upload.component.html',
-  styleUrls: ['./upload.component.css']
+  templateUrl: './sidenavbar.component.html',
+  styleUrls: ['./sidenavbar.component.css']
 })
-export class UploadComponent {
+export class SidenavbarComponent {
 
 }
