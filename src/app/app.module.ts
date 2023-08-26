@@ -5,9 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
-import { NavbarComponent } from 'src/app/navbar/navbar.component';
 import { SidenavbarComponent } from 'src/app/sidenavbar/sidenavbar.component';
 import { UploadComponent } from 'src/app/upload/upload.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { UploadComponent } from 'src/app/upload/upload.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatSlideToggleModule,
-    NavbarComponent,
+    MatButtonModule,
+    MatIconModule,
     SidenavbarComponent,
     UploadComponent
   ],

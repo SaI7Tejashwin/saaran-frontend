@@ -7,6 +7,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {NgIf, NgFor} from '@angular/common';
+import { UploadComponent } from '../upload/upload.component';
+
 
 
 /** @title Responsive sidenav */
@@ -23,6 +25,8 @@ import {NgIf, NgFor} from '@angular/common';
     MatSidenavModule,
     MatListModule,
     NgFor,
+    UploadComponent,
+    
   ],
 })
 export class SidenavbarComponent implements OnDestroy {
