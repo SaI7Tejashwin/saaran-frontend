@@ -17,7 +17,10 @@ import { UploadComponent } from 'src/app/upload/upload.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    NavbarComponent,
+    SidenavbarComponent,
+    UploadComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
