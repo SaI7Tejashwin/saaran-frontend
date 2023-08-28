@@ -7,9 +7,6 @@
       </button>
       <div *ngIf="selectedFile" class="selected-file">
         <p>Selected File: {{ selectedFile!.name }}</p>
-        <input type='file' id='myfileinput' multiple>
-        <button type="button" class="control-button" id="send-file-button">SUBMIT-FILE</button> 
-        <div id='output'></div>
         <button mat-icon-button color="warn" class="close-button" (click)="clearSelectedFile()">
           <delete-icon></delete-icon>
         </button>

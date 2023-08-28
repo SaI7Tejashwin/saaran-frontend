@@ -19,9 +19,12 @@ export class UploadComponent {
 
   onFileSelected(event: any): void {
     const file: File = event.target.files[0];
+    console.log(file);
     if (file) {
       this.selectedFile = file;
+      
     }
+    
   }
 
   clearSelectedFile(): void {
