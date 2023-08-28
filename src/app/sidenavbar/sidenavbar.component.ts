@@ -8,6 +8,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {NgIf, NgFor} from '@angular/common';
 import { UploadComponent } from '../upload/upload.component';
+import { FooterComponent } from '../footer/footer.component';
 
 
 
@@ -26,6 +27,7 @@ import { UploadComponent } from '../upload/upload.component';
     MatListModule,
     NgFor,
     UploadComponent,
+    FooterComponent
     
   ],
 })
