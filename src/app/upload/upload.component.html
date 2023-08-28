@@ -1,10 +1,15 @@
 <div class="upload-container">
     <div class="upload-card">
-      <h2>Upload Your Document!</h2>
+      <h2>Upload Your Document </h2>
       <input type="file" (change)="onFileSelected($event)" #fileInput style="display: none;" />
-      <button mat-raised-button color="primary" class="upload-button" (click)="fileInput.click()">Choose File</button>
+      <button mat-raised-button color="primary" class="upload-button" (click)="fileInput.click()">
+        <upload-icon></upload-icon>
+      </button>
       <div *ngIf="selectedFile" class="selected-file">
         <p>Selected File: {{ selectedFile!.name }}</p>
+        <input type='file' id='myfileinput' multiple>
+        <button type="button" class="control-button" id="send-file-button">SUBMIT-FILE</button> 
+        <div id='output'></div>
         <button mat-icon-button color="warn" class="close-button" (click)="clearSelectedFile()">
           <delete-icon></delete-icon>
         </button>

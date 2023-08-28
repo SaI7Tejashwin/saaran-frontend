@@ -10,6 +10,7 @@ import { UploadComponent } from 'src/app/upload/upload.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { FooterComponent } from './footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
     MatButtonModule,
     MatIconModule,
     SidenavbarComponent,
-    UploadComponent
+    UploadComponent,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
