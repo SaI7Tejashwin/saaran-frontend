@@ -32,7 +32,7 @@ import { UploadComponent } from '../upload/upload.component';
 export class SidenavbarComponent implements OnDestroy {
   mobileQuery: MediaQueryList;
 
-  fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
+  fillerNav = Array.from({length: 5}, (_, i) => `Nav Page ${i + 1}`);
 
   fillerContent = Array.from(
     {length: 50},

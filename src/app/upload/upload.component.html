@@ -4,10 +4,23 @@
       <input type="file" (change)="onFileSelected($event)" #fileInput style="display: none;" />
       <button mat-raised-button color="primary" class="upload-button" (click)="fileInput.click()">Choose File</button>
       <div *ngIf="selectedFile" class="selected-file">
-        <p>Selected File: {{ selectedFile?.name }}</p>
+        <p>Selected File: {{ selectedFile.name }}</p>
         <button mat-icon-button color="warn" class="close-button" (click)="clearSelectedFile()">
-          <mat-icon>remove</mat-icon>
+          <mat-icon>Remove</mat-icon>
         </button>
+      </div>
+      <div *ngIf="selectedFile" class="progress my-3">
+        <div
+          class="progress-bar progress-bar-info progress-bar-striped"
+          role="progressbar"
+          attr.aria-valuenow="{{ progress }}"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          [ngStyle]="{ width: progress + '%' }"
+        >
+          {{ progress }}%
+        </div>
+        <button *ngIf="selectedFile" mat-raised-button color="primary" class="upload-button-enabled" (click)="uploadFile()">Upload</button>
       </div>
     </div>
   </div>
