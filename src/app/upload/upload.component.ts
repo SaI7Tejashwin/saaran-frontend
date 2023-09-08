@@ -1,5 +1,8 @@
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CUSTOM_ELEMENTS_SCHEMA, Component, OnInit } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
+import { deleteIcon } from './deleteicon/icon.componenet';
+import { uploadIcon } from './uploadicon/icon.componenet';
 import { Observable } from 'rxjs';
 import { FileUploadService } from '../services/file-upload.service';
 import { HttpEventType, HttpResponse } from '@angular/common/http';
@@ -8,9 +11,9 @@ import { HttpEventType, HttpResponse } from '@angular/common/http';
   selector: 'app-upload',
   templateUrl: './upload.component.html',
   styleUrls: ['./upload.component.css'],
-  standalone:true,
+  standalone: true,
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
-  imports: [CommonModule]
+  imports: [CommonModule,deleteIcon,uploadIcon]
 })
 
 /**
@@ -69,5 +72,19 @@ export class UploadComponent implements OnInit{
   clearSelectedFile(): void {
     this.selectedFile = null;
   }
-}
 
+
+}
+// handleFileInput(event: any): void {
+//   const file = event.target.files[0];
+//   if (file) {
+//     const reader = new FileReader();
+//     reader.onload = (e) => {
+//       if (e.target && e.target.result) {
+//         const fileContent = e.target.result as string;
+//         this.uploadService.uploadData(fileContent);
+//       }
+//     };
+//     reader.readAsText(file);
+//   }
+// }
