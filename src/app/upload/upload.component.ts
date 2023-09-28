@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
-import { deleteIcon } from './deleteicon/icon.componenet';
-import { uploadIcon } from './uploadicon/icon.componenet';
+import { deleteIcon } from './deleteicon/icon.component';
+import { uploadIcon } from './uploadicon/icon.component';
 import { Observable } from 'rxjs';
 import { FileUploadService } from '../services/file-upload.service';
 import { HttpEventType, HttpResponse } from '@angular/common/http';
